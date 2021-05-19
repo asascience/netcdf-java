@@ -28,18 +28,18 @@ buildscript {
 
 allprojects {
   // Matches Maven's "project.groupId". Used in MANIFEST.MF for "Implementation-Vendor-Id".
-  group = 'edu.ucar'
+  group = 'com.rpsgroup'
   // Matches Maven's "project.version". Used in MANIFEST.MF for "Implementation-Version".
   // We try to follow semantic versioning, and thus we use <major>.<minor>.<patch>-<prerelease version>
   // <prerelease version> may be SNAPSHOT, alphax, betax, etc.
   // Note - if bumping to a new major or minor version, be sure to update the docs (see step 1 in
   // docs/src/private/internal/release.md for details)
-  version = '5.4.1'
+  version = '5.4.1-RPS'
   status = 'release'
 }
 
 // Matches Maven's "project.description".
-description = 'The Unidata netCDF-Java library (aka CDM).'
+description = 'RPS Ocean Science fork of Unidata netCDF-Java library (aka CDM).'
 
 import java.text.SimpleDateFormat
 
@@ -53,7 +53,7 @@ ext {
   title = 'CDM modules'
 
   // Matches Maven's "project.organization.name". Used in MANIFEST.MF for "Implementation-Vendor".
-  vendor = 'UCAR/Unidata'
+  vendor = 'RPSGroup'
 
   // It makes sense to publish major.minor versions of the docs, as
   // any patch bumps should be backwards compatible bug fixes only
